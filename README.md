@@ -1,1 +1,1 @@
-# CV
+Este es mi portafolio escrito en CSS, Javascript y HTML puro.

@@ -359,7 +359,7 @@ p {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     padding: 30px;
     border-radius: 15px;
@@ -374,15 +374,21 @@ p {
     height: 500px;
 }
 
-#services .service-item .skill-table {
+#services .skill-table {
     font-size: 2rem;
     font-weight: 500;
     color: white;
-    margin: .5rem;
+    margin: .5rem auto;
 }
 
-#services .service-item .skill-table td {
-    width: 20%;
+#services .skill-table img {
+    height: 3rem;
+    width: 3rem;
+}
+
+#services .skill-row {
+    display: flex;
+    flex-direction: row;
 }
 
 #services .service-item::after {
@@ -721,7 +727,7 @@ p {
 
 /* Media QUERY FOR phone*/
 
-@media only screen and (min-width:300px) {
+@media only screen and (min-width:300px) and (max-width:599px) {
     /*Contact*/
     #contact .contact-items {
         width: 100%;
